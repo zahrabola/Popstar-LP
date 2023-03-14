@@ -34,6 +34,7 @@
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background: linear-gradient(111.7deg, rgb(251, 198, 6) 2.4%, rgb(224, 82, 95) 28.3%, rgb(194, 78, 154) 46.2%, rgb(32, 173, 190) 79.4%, rgb(22, 158, 95) 100.2%);
   }
   /* album carousel 
 .swiper-wrapper{
@@ -64,13 +65,12 @@
     padding: 2px;
   }
   
-
 */
 .swiper{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 10vh;
   padding: 1rem;
 }
 .swiper-wrapper{
@@ -115,12 +115,12 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(15, 119, 24, 0.425); 
+  background: linear-gradient(111.7deg, rgb(251, 198, 6) 2.4%, rgb(224, 82, 95) 28.3%, rgb(194, 78, 154) 46.2%, rgb(32, 173, 190) 79.4%, rgb(22, 158, 95) 100.2%);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(15, 119, 23); 
+  background: linear-gradient(111.7deg, rgb(251, 198, 6) 2.4%, rgb(224, 82, 95) 28.3%, rgb(194, 78, 154) 46.2%, rgb(32, 173, 190) 79.4%, rgb(22, 158, 95) 100.2%);
 }
 .scrollphoto{
   margin-top: 50px;
@@ -132,7 +132,9 @@ border-radius: 20px;
   padding: 10px;
   justify-content: center;
   object-fit: cover;
+  min-height: 300px;
 }
+
 /* */
 .timeline{
   position: relative;
@@ -158,21 +160,32 @@ opacity: 0;
 }
 /* animation */
 .container-timeline:nth-child(1){
-  animation-delay: 0s;
-}
-.container-timeline:nth-child(2){
-  animation-delay: 1s;
-}
-.container-timeline:nth-child(3){
   animation-delay: 2s;
 }
-.container-timeline:nth-child(4){
+.container-timeline:nth-child(2){
   animation-delay: 3s;
 }
-.container-timeline:nth-child(5){
+.container-timeline:nth-child(3){
   animation-delay: 4s;
 }
-
+.container-timeline:nth-child(4){
+  animation-delay: 5s;
+}
+.container-timeline:nth-child(5){
+  animation-delay: 6s;
+}
+.container-timeline:nth-child(6){
+  animation-delay: 7s;
+}
+.container-timeline:nth-child(7){
+  animation-delay: 8s;
+}
+.container-timeline:nth-child(8){
+  animation-delay: 9s;
+}
+.container-timeline:nth-child(9){
+  animation-delay: 10s;
+}
 .textbox{
 padding: 20px 20px;
 background: #f1f1f1;
@@ -250,18 +263,110 @@ animation: moveline 8s linear forwards;
     left: -14px;
   }
 }
+/* */
+h3{
+  color: #f1f1f1;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  font-family: Arvo;
+}
+.btnlink{
+  background-color:  rgb(251, 198, 6);
+  border: rgb(251, 198, 6);
+}
+.btnlink:hover{
+  background-color:  rgba(251, 198, 6, 0.753);
+}
+.btnlink2{
+  background-color:  rgb(224, 82, 95);
+  border: rgb(224, 82, 95);
+}
+.btnlink2:hover{
+  background-color:  rgba(224, 82, 94, 0.822);
+}
+.btnlink3{
+  background-color:  rgb(194, 78, 154);
+  border: rgb(194, 78, 154);
+}
+.btnlink3:hover{
+  background-color:  rgba(194, 78, 153, 0.842);
+}
+.btnlink4{
+  background-color:  rgb(32, 173, 190);
+  border: rgb(32, 173, 190);
+}
+.btnlink4:hover{
+  background-color: rgba(32, 174, 190, 0.863);
+}
+.btnlink5{
+  background-color: rgb(22, 158, 95);
+  border:  rgb(22, 158, 95);
+}
+.btnlink5:hover{
+  background-color:  rgba(22, 158, 95, 0.842);
+}
+/* */
 
 
-/*   height: 260px;
+.shadowh {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.text {
+  font-size: 169px;
+}
+figcaption {
+  padding: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.icon{
+  fill: white;
+}
+a {
+  color: white;
+ text-decoration: none;
+}
+a:hover{
+  color:white ;
+}
+.container-text, .small-text{
+  color: white;
+}
+
+
+/* 
+linear-gradient(111.7deg, rgb(251, 198, 6) 2.4%, rgb(224, 82, 95) 28.3%, rgb(194, 78, 154) 46.2%, rgb(32, 173, 190) 79.4%, rgb(22, 158, 95) 100.2%);
+  height: 260px;
   width: 270px; */
 </style>
 <body>
     <!--Header-->
+    <div class="container header">
+      <div class="plate">
+        <p class="shadowh text">Kelis</p>
+    
+      </div>
+    </div>
     <!---Image slider scroll with modal - images of album covers-->
-    <section class="carousel-section section-r-offset position-relative mt-5">
+    <section class="carousel-section section-r-offset position-relative ">
         <div class="container">
             <h3 class="mb-2">Album Slider</h3>
-        </div>
+            <p class="container-text">Kelis was born on 21 August 1979 in Harlem, New York, USA. Kelis Rogers left home at At age 14, she was admitted to New York's Fiorello H. LaGuardia High School of Music & Art and Performing Arts, where she learned to play the saxophone and won a spot in the Girls Choir of Harlem. she later landed a deal with Virgin four years later. Having linked with emergent production team the Neptunes, she provided background vocals on Noreaga's "Superthug" and was featured on Ol' Dirty Bastard's "Got Your Money." In December 1999, months after the release of the latter single,
+               Kelis made her full-length debut album Kaleidoscope. She then went on to have 8 more albums.</p>
+              <small class="small-text">Scroll to see the various album covers.</small>  
+          </div>
         <div class="carousel-wrapper">
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -269,11 +374,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/LFwmSMp8tINSpPo1R2wyR59N2zoO4KiP7jv8hnIkNKM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODAx/Ny0xNTI2MDQxMTg1/LTM4NjEucG5n.jpeg" alt="/" id="img-1"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/132009702?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
-                              Kelis – Kaleidoscope
+                                Kelis – Kaleidoscope
+                              </a>   
                             </figcaption>
                           </figure>
                     </div>
@@ -282,11 +389,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/ZIRYMyxhlpYl5n-bl3n2WQTBaLxuHTHrqNEamjUJ584/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MTYz/My0xNDM4OTg0MDg1/LTIyNzguanBlZw.jpeg" alt="/" id="img-2"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/98190182?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
                               Kelis – Wanderland
+                              </a>
                             </figcaption>
                           </figure>
                     </div>
@@ -295,11 +404,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/xH8HofmPBxGCkHkaSiISN39uLPMtNd9PVZyD9uFpLYs/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5ODI1/OC0xNDgwMTE0ODMy/LTc3MDQuanBlZw.jpeg" alt="/" id="img-3"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/303484?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
                               Kelis – Tasty
+                              </a>
                             </figcaption>
                           </figure>
                     </div>
@@ -308,7 +419,7 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/g43Psnz80s8oebaOwvKq32xQ5m43QECF9CWlmrnam4Q/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MTg4/OC0xMjI2MTgzNzQw/LmpwZWc.jpeg" alt="/" id="img-4"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
@@ -321,11 +432,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/XXNjCkpRk1UQZjyG-MgHBewsEMaEMG4ifl8C8OZQG3c/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNjg1/MzAtMTYwMDgxNDY3/MS0yNzc0LmpwZWc.jpeg" alt="/" id="img-5"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/300885?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
                               Kelis – Flesh Tone
+                            </a>
                             </figcaption>
                           </figure>
                     </div>
@@ -334,11 +447,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/WUdxM1tPLoeMcDsFrmcMj1Iu203_ypNMfNEevLCEq4g/rs:fit/g:sm/q:90/h:570/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwMDg1/ODUtMTQwODcwMjEx/NC0yNjQ2LmpwZWc.jpeg" alt="/" id="img-6"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/8943453?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
                               Kelis – Live In London
+                              </a>
                             </figcaption>
                           </figure>
                     </div>
@@ -347,11 +462,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/ZACfIpnMMeadeV9FK-apXCnV8ZpGq3WgPAJCDxIqokI/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MDQy/NDYtMTM5Nzc2NzQy/NC0zNDcyLmpwZWc.jpeg" alt="/" id="img-7"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/7431945?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
                               Kelis – Food
+                              </a>
                             </figcaption>
                           </figure>
                     </div>
@@ -360,11 +477,13 @@ animation: moveline 8s linear forwards;
                         <figure>
                             <img width="640" height="580" src="https://i.discogs.com/CZQ5y8AHMrIVSp4ZflLQCp_l6ncYLHWDA4l68TmhvNw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczODMz/MDItMTQ4MjA4ODc2/Ni01NTc5LmpwZWc.jpeg" alt="/" id="img-8"  class="img-fluid img-slide">
                             <figcaption>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                              <a href="https://www.deezer.com/en/album/1441983?autoplay=true" alt="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" width="20" height="20">
                                 <path d="M12 13.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
                                 <path fill-rule="evenodd" d="M19.071 3.429C15.166-.476 8.834-.476 4.93 3.429c-3.905 3.905-3.905 10.237 0 14.142l.028.028 5.375 5.375a2.359 2.359 0 003.336 0l5.403-5.403c3.905-3.905 3.905-10.237 0-14.142zM5.99 4.489A8.5 8.5 0 0118.01 16.51l-5.403 5.404a.859.859 0 01-1.214 0l-5.378-5.378-.002-.002-.023-.024a8.5 8.5 0 010-12.02z"></path>
                               </svg>
                               Kelis – Live From Metropolis Studios
+                              </a>
                             </figcaption>
                           </figure>
                     </div>
@@ -377,6 +496,7 @@ animation: moveline 8s linear forwards;
      <section>
       <div class="container">
         <h3 class="mb-2">Image scroll</h3>
+        <p class="container-text">Showcasing the creative artistry and one-of-a-king indentity through her, album covers, promotion images and song list.</p>
        </div>
        <div class="scrollphoto">
      
@@ -432,16 +552,17 @@ animation: moveline 8s linear forwards;
        </div>
      </section>
     <!----Heroes- title of sectiion - top songs 4----->
-    <section class="cardtopsong-section mb-5">
+    <section class="cardtopsong-section  mb-5">
       <div class="container">
-        <h3 class="mb-3">Top Songs</h3>
+        <h3 class="mb-3">Top  5 Songs</h3>
+        <small class="small-text">As quoted by the Guardian newspaper.</small>  
        </div>
-      <div class="col-md-10 offset-md-1 ">
+       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-lg-6  mt-2">
+          <div class="col-md-6 mt-2">
             <div class="card rounded-4 shadow ">
               <div class="card-body p-5">
-               <h2 class="fw-bold mb-0">What's new- song title</h2>
+               <h2 class="fw-bold mb-0">Greatest Song- Caught Out There</h2>
                 <ul class="d-grid gap-4 my-5 list-unstyled">
                  <li class="d-flex gap-4">
                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-music-player-fill" viewBox="0 0 16 16">
@@ -449,8 +570,8 @@ animation: moveline 8s linear forwards;
                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Music Grid view</h5>
-                     Not into lists? Try the new grid view.
+                     <h5 class="mb-0">Music</h5>
+                     Caught Out There was one of the great attention-grabbing debuts.
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -459,8 +580,8 @@ animation: moveline 8s linear forwards;
                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Bookmarks</h5>
-                     Save items you love for easy access later.
+                     <h5 class="mb-0">Fun Fact</h5>
+                     Quentin Harrison from Albumism stated that Kelis is "burning with righteous anger" on the song,
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -468,19 +589,19 @@ animation: moveline 8s linear forwards;
                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Video embeds</h5>
-                     Share videos wherever you go.
+                     <h5 class="mb-0">Video </h5>
+                     8+ million views on YouTube
                    </div>
                  </li>
                </ul>
-               <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great, thanks!</button>
+               <button type="button" class="btn btn-lg btn-primary mt-5 w-100 btnlink4" data-bs-dismiss="modal">Great, thanks!</button>
              </div>
             </div>
           </div>
-          <div class=" col-lg-3 col-lg-6   mt-2">
+          <div class=" col-md-6  mt-2">
             <div class="card rounded-4 shadow ">
               <div class="card-body p-5">
-               <h2 class="fw-bold mb-0">What's new- song title</h2>
+               <h2 class="fw-bold mb-0">Greatest Song- Millionaire</h2>
                 <ul class="d-grid gap-4 my-5 list-unstyled">
                  <li class="d-flex gap-4">
                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-music-player-fill" viewBox="0 0 16 16">
@@ -488,8 +609,8 @@ animation: moveline 8s linear forwards;
                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Music Grid view</h5>
-                     Not into lists? Try the new grid view.
+                     <h5 class="mb-0">Music</h5>
+                     The song has a drum machine, distorted synths and fabulous melody. 
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -498,8 +619,8 @@ animation: moveline 8s linear forwards;
                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Bookmarks</h5>
-                     Save items you love for easy access later.
+                     <h5 class="mb-0">Fun Fact</h5>
+                     Millionaire, features American rapper André 3000.
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -507,19 +628,19 @@ animation: moveline 8s linear forwards;
                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Video embeds</h5>
-                     Share videos wherever you go.
+                     <h5 class="mb-0">Video </h5>
+                     10+ million views on YouTube
                    </div>
                  </li>
                </ul>
-               <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great, thanks!</button>
+               <button type="button" class="btn btn-lg btn-primary mt-5 w-100 btnlink" data-bs-dismiss="modal">Great, thanks!</button>
              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-lg-6  mt-2">
+          <div class=" col-md-6  mt-2">
             <div class="card rounded-4 shadow ">
               <div class="card-body p-5">
-               <h2 class="fw-bold mb-0">What's new- song title</h2>
+               <h2 class="fw-bold mb-0">Greatest Song- Acapella </h2>
                 <ul class="d-grid gap-4 my-5 list-unstyled">
                  <li class="d-flex gap-4">
                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-music-player-fill" viewBox="0 0 16 16">
@@ -527,8 +648,8 @@ animation: moveline 8s linear forwards;
                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Music Grid view</h5>
-                     Not into lists? Try the new grid view.
+                     <h5 class="mb-0">Music</h5>
+                     The song has a drum machine, distorted synths and fabulous melody. 
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -537,8 +658,8 @@ animation: moveline 8s linear forwards;
                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Bookmarks</h5>
-                     Save items you love for easy access later.
+                     <h5 class="mb-0">Fun Fact</h5>
+                     Acapella, features French Dj David Guetta.
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -546,19 +667,21 @@ animation: moveline 8s linear forwards;
                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Video embeds</h5>
-                     Share videos wherever you go.
+                     <h5 class="mb-0">Video </h5>
+                     20+ million views on YouTube
                    </div>
                  </li>
                </ul>
-               <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great, thanks!</button>
+               <button type="button" class="btn btn-lg btn-primary mt-5 w-100 btnlink2" data-bs-dismiss="modal">Great, thanks!</button>
              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-lg-6  mt-2">
+        
+          
+          <div class="col-md-6  mt-2">
             <div class="card rounded-4 shadow ">
               <div class="card-body p-5">
-               <h2 class="fw-bold mb-0">What's new- song title</h2>
+               <h2 class="fw-bold mb-0">Greatest Song- Trick me</h2>
                 <ul class="d-grid gap-4 my-5 list-unstyled">
                  <li class="d-flex gap-4">
                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-music-player-fill" viewBox="0 0 16 16">
@@ -566,8 +689,8 @@ animation: moveline 8s linear forwards;
                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Music Grid view</h5>
-                     Not into lists? Try the new grid view.
+                     <h5 class="mb-0">Music </h5>
+                     The Independent wrote that the song's "sprightly canter" is "particularly irresistible".
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -576,8 +699,8 @@ animation: moveline 8s linear forwards;
                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                      </svg>
                    <div>
-                     <h5 class="mb-0">Bookmarks</h5>
-                     Save items you love for easy access later.
+                     <h5 class="mb-0">Fun Fact</h5>
+                     Dallas Austin, wrote Trick Me – irrepressible hook and killer lyrics
                    </div>
                  </li>
                  <li class="d-flex gap-4">
@@ -586,18 +709,60 @@ animation: moveline 8s linear forwards;
                      </svg>
                    <div>
                      <h5 class="mb-0">Video embeds</h5>
-                     Share videos wherever you go.
+                     69+ million views on YouTube
                    </div>
                  </li>
                </ul>
-               <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great, thanks!</button>
+               <button type="button" class="btn btn-lg btn-primary mt-5 w-100 btnlink3" data-bs-dismiss="modal">Great, thanks!</button>
+             </div>
+            </div>
+          </div>
+         
+          <div class="col mt-2">
+            <div class="card rounded-4 shadow ">
+              <div class="card-body p-5">
+               <h2 class="fw-bold mb-0">Greatest Song- Milkshake </h2>
+                <ul class="d-grid gap-4 my-5 list-unstyled">
+                 <li class="d-flex gap-4">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-music-player-fill" viewBox="0 0 16 16">
+                       <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                     </svg>
+                   <div>
+                     <h5 class="mb-0">Music</h5>
+                     Milkshake is an astonishing record, made of fizzing, blaring electronic noise, an Egyptian darbuka drum and Kelis’s alternately insouciant vocals.
+                    
+                   </div>
+                 </li>
+                 <li class="d-flex gap-4">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                       <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                     </svg>
+                   <div>
+                     <h5 class="mb-0">Fun Fact</h5>
+                     "Milkshake" is a song by American singer Kelis from her third studio album, Tasty (2003).<br>
+                     the song was originally offered to Britney Spears for her fourth studio album, In the Zone, but was instead given to Kelis.
+                   </div>
+                 </li>
+                 <li class="d-flex gap-4">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                       <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
+                     </svg>
+                   <div>
+                     <h5 class="mb-0">Video</h5>
+                     90+ million views on YouTube
+                   </div>
+                 </li>
+               </ul>
+               <button type="button" class="btn btn-lg btn-primary mt-5 w-100 btnlink5" data-bs-dismiss="modal">Great, thanks!</button>
              </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </section>     
-    <img src="" class="img-fluid" id="gridimg">    
+
     <!----Heroes- title of sectiion - style evoltion----->
      <!---grid images x2-->
     <section class="style-section mb-5">
@@ -608,7 +773,6 @@ animation: moveline 8s linear forwards;
         <div class="row">
           <div class="col-md-6  ">
             <!--------------------->
-            Hair
             <div class="row ">
               <div class="col-sm-4 ">
                 <img src="https://www.essence.com/wp-content/uploads/2010/07/images/2010/07/455371-2007_think_pink.jpg?width=800" class="img-fluid" id="gridimg">    
@@ -647,7 +811,6 @@ animation: moveline 8s linear forwards;
             </div>
           </div>
           <div class="col-md-6 ">
-            fashion
              <!--------------------->
              <div class="row ">
               <div class="col-sm-4 ">
@@ -700,62 +863,94 @@ animation: moveline 8s linear forwards;
         ---------->
        <div class="timeline">
         <div class="container-timeline left-container">
+          <img src="https://www.essence.com/wp-content/uploads/2021/02/Kelis_L04b_Making-Salad-Dressing-1-v2.2.00_03_42_08.Still003-1920x1080.jpg?width=1280" class=" img-fluid t-img">
+          <div class="textbox">
+            <h2>Kelis - Culinary School</h2>
+            <small>2006 to 2010</small>
+            <p>Kelis trained part-time as a saucier, eventually graduating from Le Cordon Bleu.</p>
+            <span class="l-c-arrow"></span>
+          </div>
+        </div>
+        <!--------------------->
+          <div class="container-timeline right-container">
+            <img src="https://www3.pictures.gi.zimbio.com/Heatherette+Spring+2007+Runway+Tho1wzkaMcTx.jpg" class=" img-fluid t-img">
+            <div class="textbox">
+              <h2>Kelis - Project Runway</h2>
+              <small>2011 to 2012</small>
+              <p>Host of a TV show.</p>
+              <span class="r-c-arrow"></span>
+            </div>
+          </div>
+          <!--------------------->
+          <div class="container-timeline left-container">
+            <img src="https://cdn.shopify.com/s/files/1/1370/4945/files/Life_naturally4_1200x.jpg?v=1613571865" class=" img-fluid t-img">
+            <div class="textbox">
+              <h2>Kelis - Sauce line</h2>
+              <small>2013</small>
+              <p>Kelis debuted her sauce line, Feast, at the Beverly Hills Food & Wine Festival.[105] Kelis has described sauce as "what accessories are to a woman's outfit. Sauce defines where the dish is from and who's making it...I think everything is better smothered, poured, or dipped."</p>
+              <span class="l-c-arrow"></span>
+            </div>
+          </div>
+          <!--------------------->
+          <div class="container-timeline right-container">
+            <img src="https://i.ytimg.com/vi/VwDHpG4l22s/maxresdefault.jpg" class=" img-fluid t-img">
+            <div class="textbox">
+              <h2>Kelis - Wardrobe Junkies</h2>
+              <small>2014</small>
+              <p>Youtube Vlog. Kelis discusses the stories behind her Wardrobe.</p>
+              <span class="r-c-arrow"></span>
+            </div>
+          </div>
+          <!--------------------->  
+        <div class="container-timeline left-container">
           <img src="https://cookingbythebook.com//wp-content/uploads/2015/11/wc-Book-Cover7-558x700.jpg" class=" img-fluid t-img">
           <div class="textbox">
-            <h2>Kelis</h2>
-            <small>data- timeline</small>
+            <h2>Kelis - Cookbook</h2>
+            <small>2015</small>
             <p>Los Pollos Hermanos is a fictional fast food restaurant chain specializing in chicken that was featured in the television series Breaking Bad and its spin-off Better Call Saul.</p>
             <span class="l-c-arrow"></span>
           </div>
         </div>
-      
         <!--------------------->
-        
-          <div class="container-timeline right-container">
-            <img src="https://blackgirlseat.com/wp-content/uploads/2022/02/IMG_8990-819x1024.jpg" class=" img-fluid t-img">
-            <div class="textbox">
-              <h2>Kelis</h2>
-              <small>data- timeline</small>
-              <p>Los Pollos Hermanos is a fictional fast food restaurant chain specializing in chicken that was featured in the television series Breaking Bad and its spin-off Better Call Saul.</p>
-              <span class="r-c-arrow"></span>
-            </div>
-          </div>
-         
-          <!--------------------->
-  
-        <div class="container-timeline left-container">
-          <img src="https://media.architecturaldigest.com/photos/5a58fc1f5dd0ad108e9a839e/master/pass/513CumberlandRd-print-26.jpg" class=" img-fluid t-img">
+        <div class="container-timeline right-container">
+          <img src="https://freight.cargo.site/t/original/i/30bbd1db16afd47cd21ee3788c00138a58fb8ef431dbba6bfd837a62fbb55685/IMG_7548.jpg" class=" img-fluid t-img">
           <div class="textbox">
-            <h2>Kelis</h2>
-            <small>data- timeline</small>
-            <p>Los Pollos Hermanos is a fictional fast food restaurant chain specializing in chicken that was featured in the television series Breaking Bad and its spin-off Better Call Saul.</p>
-            <span class="l-c-arrow"></span>
+            <h2>Kelis -  food truck</h2>
+            <small>2016</small>
+            <p>Kelis and cooking duo Le Bun opened a pop-up restaurant in London that she adapted as a food truck to tour around UK music festivals.</p>
+            <span class="r-c-arrow"></span>
           </div>
         </div>
-      
         <!--------------------->
-        
-          <div class="container-timeline right-container">
-            <img src="https://hips.hearstapps.com/hmg-prod/images/2-1623349143.jpg?crop=1xw:0.7417582417582418xh;center,top&resize=1200:*" class=" img-fluid t-img">
-            <div class="textbox">
-              <h2>Kelis</h2>
-              <small>data- timeline</small>
-              <p>Los Pollos Hermanos is a fictional fast food restaurant chain specializing in chicken that was featured in the television series Breaking Bad and its spin-off Better Call Saul.</p>
-              <span class="r-c-arrow"></span>
-            </div>
-          </div>
-       
-             <!--------------------->
-     
         <div class="container-timeline left-container">
-          <img src="https://assets3.thrillist.com/v1/image/2869621/1200x600/scale;" class=" img-fluid t-img">
+          <img src="https://blackgirlseat.com/wp-content/uploads/2022/02/IMG_8990-819x1024.jpg" class=" img-fluid t-img">
           <div class="textbox">
-            <h2>Kelis</h2>
-            <small>data- timeline</small>
-            <p>Los Pollos Hermanos is a fictional fast food restaurant chain specializing in chicken that was featured in the television series Breaking Bad and its spin-off Better Call Saul.</p>
+            <h2>Kelis - Bounty & Full </h2>
+            <small>2018</small>
+            <p>Organic olive oil, straight from our grove to sea salts smoked and hand turned for 17 hours and infused right here on the farm.</p>
             <span class="l-c-arrow"></span>
           </div>
         </div>
+        <!--------------------->
+        <div class="container-timeline right-container">
+          <img src="https://assets3.thrillist.com/v1/image/2869621/1200x600/scale;" class=" img-fluid t-img">         
+          <div class="textbox">
+            <h2>Kelis -  Cooked with Cannabis</h2>
+            <small>2020</small>
+            <p>The TV show cooking competition where recreational marijuana is used as an ingredient</p>
+            <span class="r-c-arrow"></span>
+          </div>
+        </div>
+           <!--------------------->    
+      <div class="container-timeline left-container">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2-1623349143.jpg?crop=1xw:0.7417582417582418xh;center,top&resize=1200:*" class=" img-fluid t-img">       
+        <div class="textbox">
+          <h2>Kelis - Bounty Farm</h2>
+          <small>2021</small>
+          <p>The California farm where she has livestock and homegrown arugula.  </p>
+          <span class="l-c-arrow"></span>
+        </div>
+      </div>
        </div>
 
     </section>
